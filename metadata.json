@@ -1,0 +1,6 @@
+{
+  "name": "Centro Médico Gelvisol",
+  "description": "Website institucional do Centro Médico Especializado Gelvisol em Luanda, Angola. Cuidados médicos especializados, tecnologia e humanização.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

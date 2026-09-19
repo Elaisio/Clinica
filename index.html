@@ -1,0 +1,1246 @@
+<!doctype html>
+<html lang="pt" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centro Médico Especializado Gelvisol | Luanda, Angola</title>
+    <meta name="description" content="Centro Médico Especializado Gelvisol em Luanda, Angola. Cuidados médicos especializados com competência, tecnologia e humanização. Consultórios, laboratório, bloco operatório e internamento VIP." />
+    <meta property="og:title" content="Centro Médico Especializado Gelvisol | Luanda, Angola" />
+    <meta property="og:description" content="Centro Médico Especializado Gelvisol em Luanda, Angola. Cuidados médicos especializados com competência, tecnologia e humanização." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="sala.png" />
+    <link rel="icon" type="image/png" href="logo.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN para execução direta em puro HTML/CSS/JS) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sky: {
+                50: '#f0f9ff',
+                100: '#e0f2fe',
+                200: '#bae6fd',
+                300: '#7dd3fc',
+                600: '#0284c7',
+                700: '#0369a1',
+                800: '#075985',
+                900: '#0c4a6e',
+                950: '#082f49',
+              }
+            },
+            fontFamily: {
+              heading: ['Outfit', 'sans-serif'],
+              sans: ['Plus Jakarta Sans', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Estilos Personalizados Puros -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Ícones Lucide (Vanilla) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="font-sans antialiased text-slate-700 bg-white selection:bg-sky-100 selection:text-sky-900">
+    
+    <!-- Top Bar de Informações e Contacto -->
+    <div class="bg-slate-900 text-slate-300 text-xs py-2 border-b border-slate-800">
+      <div class="container flex flex-col sm:flex-row justify-between items-center gap-2">
+        <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-sky-400"></i>
+            <span>Luanda, Angola</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="clock" class="w-3.5 h-3.5 text-sky-400"></i>
+            <span>Seg - Sáb: 08h00 - 20h00 | Urgências: 24h</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="tel:+244949934949" class="hover:text-white flex items-center gap-1.5 transition-colors">
+            <i data-lucide="phone" class="w-3.5 h-3.5 text-sky-400"></i>
+            <span class="font-medium">+244 949 934 949</span>
+          </a>
+          <span class="text-slate-600">|</span>
+          <a href="https://wa.me/244949934949" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-1.5 transition-colors font-medium">
+            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cabeçalho Principal (Sticky Header) -->
+    <header class="site-header">
+      <div class="container flex items-center justify-between h-20">
+        <!-- Logótipo da Clínica com a Imagem Oficial logo.png -->
+        <a href="#inicio" class="flex items-center gap-3 group">
+          <img 
+            src="logo.png" 
+            alt="Logótipo Centro Médico Gelvisol" 
+            class="h-12 sm:h-14 w-auto object-contain transition-transform duration-200 group-hover:scale-105" 
+          />
+          <div class="flex flex-col justify-center">
+            <span class="font-heading font-extrabold text-lg sm:text-xl text-slate-900 tracking-tight block leading-none">
+              GELVISOL
+            </span>
+            <span class="text-[10px] sm:text-xs text-sky-800 font-semibold tracking-wider uppercase block mt-1">
+              Centro Médico Especializado
+            </span>
+          </div>
+        </a>
+
+        <!-- Menu de Navegação Desktop (5 Secções Oficiais) -->
+        <nav class="hidden lg:flex items-center gap-7">
+          <a href="#inicio" class="nav-link">Início</a>
+          <a href="#apresentacao" class="nav-link">Apresentação</a>
+          <a href="#especialidades" class="nav-link">Especialidades</a>
+          <a href="#estrutura" class="nav-link">Cirurgia & Internamento</a>
+          <a href="#contactos" class="nav-link">Contactos</a>
+        </nav>
+
+        <!-- Ações Desktop -->
+        <div class="hidden sm:flex items-center gap-2.5">
+          <a href="centro-medico-gelvisol.zip" download="centro-medico-gelvisol.zip" class="btn-outline text-xs py-2 px-3 flex items-center gap-1.5 border-slate-300 hover:border-sky-800 text-slate-700 hover:text-sky-800 font-medium" title="Baixar todos os ficheiros do site (HTML, CSS, JS e Imagens)">
+            <i data-lucide="download" class="w-4 h-4 text-sky-700"></i>
+            <span>Baixar Site (.ZIP)</span>
+          </a>
+          <button type="button" data-open-appointment class="btn-primary">
+            <i data-lucide="calendar" class="w-4 h-4 text-sky-200"></i>
+            <span>Marcar Consulta</span>
+          </button>
+        </div>
+
+        <!-- Botão Menu Mobile -->
+        <button id="mobile-menu-btn" type="button" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors" aria-label="Abrir menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Gaveta do Menu Mobile (Drawer) -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-slate-900/60 z-50 hidden backdrop-blur-sm transition-opacity"></div>
+    <div id="mobile-menu-drawer" class="fixed top-0 right-0 bottom-0 w-72 bg-white z-50 p-6 shadow-2xl flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-slate-200 mb-6">
+          <div class="flex items-center gap-2.5">
+            <img src="logo.png" alt="Gelvisol" class="h-9 w-auto object-contain" />
+            <div class="flex flex-col">
+              <span class="font-heading font-bold text-slate-900 text-sm leading-none">GELVISOL</span>
+              <span class="text-[9px] text-sky-800 font-semibold uppercase tracking-wider mt-0.5">Centro Médico</span>
+            </div>
+          </div>
+          <button id="close-mobile-menu-btn" type="button" class="p-1 rounded-lg text-slate-500 hover:bg-slate-100" aria-label="Fechar menu">
+            <i data-lucide="x" class="w-6 h-6"></i>
+          </button>
+        </div>
+        <nav class="flex flex-col gap-4">
+          <a href="#inicio" class="mobile-nav-link text-base font-semibold text-slate-800 hover:text-sky-800 py-1">Início</a>
+          <a href="#apresentacao" class="mobile-nav-link text-base font-semibold text-slate-800 hover:text-sky-800 py-1">Apresentação</a>
+          <a href="#especialidades" class="mobile-nav-link text-base font-semibold text-slate-800 hover:text-sky-800 py-1">Especialidades</a>
+          <a href="#estrutura" class="mobile-nav-link text-base font-semibold text-slate-800 hover:text-sky-800 py-1">Cirurgia & Internamento</a>
+          <a href="#contactos" class="mobile-nav-link text-base font-semibold text-slate-800 hover:text-sky-800 py-1">Contactos</a>
+        </nav>
+      </div>
+
+      <div class="pt-6 border-t border-slate-200">
+        <button type="button" data-open-appointment class="w-full btn-primary mb-3">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Marcar Consulta</span>
+        </button>
+        <a href="tel:+244949934949" class="w-full btn-outline flex justify-center text-xs mb-3">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          <span>Ligar: 949 934 949</span>
+        </a>
+        <a href="centro-medico-gelvisol.zip" download="centro-medico-gelvisol.zip" class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-sky-50 text-sky-800 border border-sky-200 text-xs font-semibold hover:bg-sky-100 transition-colors">
+          <i data-lucide="download" class="w-4 h-4 text-sky-700"></i>
+          <span>Baixar Pacote do Site (.ZIP)</span>
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <!-- ===================================================================
+           1. SECÇÃO HERO (Com a foto real da Recepção: sala.png)
+           =================================================================== -->
+      <section id="inicio" class="hero-section">
+        <div class="container">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            
+            <!-- Coluna de Texto -->
+            <div class="lg:col-span-7 space-y-6 text-left">
+              <div class="inline-flex items-center gap-2 bg-sky-50 border border-sky-200 text-sky-900 px-3.5 py-1.5 rounded-full text-xs font-semibold">
+                <span class="w-2 h-2 rounded-full bg-sky-600 animate-pulse"></span>
+                <span>Centro Médico Polivalente em Luanda</span>
+              </div>
+
+              <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+                Cuidados Médicos Especializados com <span class="text-sky-800">Competência</span> e <span class="text-sky-800">Humanização</span>
+              </h1>
+
+              <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+                O Centro Médico Especializado Gelvisol reúne infraestrutura moderna, corpo clínico multidisciplinar de elevada qualificação e tecnologia de diagnóstico e cirurgia minimamente invasiva ao serviço da sua saúde.
+              </p>
+
+              <!-- Botões de Ação -->
+              <div class="pt-2 flex flex-col sm:flex-row gap-3.5 sm:items-center">
+                <button type="button" data-open-appointment class="btn-primary text-base py-3 px-6">
+                  <i data-lucide="calendar" class="w-5 h-5 text-sky-200"></i>
+                  <span>Marcar Consulta</span>
+                </button>
+                <a href="#apresentacao" class="btn-outline text-base py-3 px-6">
+                  <span>Conheça-nos</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4 text-slate-500"></i>
+                </a>
+              </div>
+
+              <!-- Destaques Rápidos -->
+              <div class="pt-5 flex flex-wrap items-center gap-4 sm:gap-6 text-xs text-slate-600 border-t border-slate-200">
+                <div><span class="font-bold text-slate-900">18 Especialidades</span> Médicas</div>
+                <span class="text-slate-300">•</span>
+                <div><span class="font-bold text-slate-900">Laboratório</span> de Análises Clínicas</div>
+                <span class="text-slate-300">•</span>
+                <div><span class="font-bold text-slate-900">Bloco Operatório</span> & Internamento VIP</div>
+              </div>
+            </div>
+
+            <!-- Imagem Principal (Recepção: sala.png) -->
+            <div class="lg:col-span-5">
+              <div class="hero-image-box">
+                <img 
+                  src="sala.png" 
+                  alt="Recepção e Sala de Espera do Centro Médico Gelvisol em Luanda" 
+                  loading="eager"
+                  onerror="this.onerror=null; this.src='public/sala.png';"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Indicadores Rápidos -->
+          <div class="mt-12 pt-8 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <a href="#especialidades" class="card-clean flex items-start gap-4">
+              <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="stethoscope" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900">Especialidades</h4>
+                <p class="text-xs text-slate-500 mt-0.5">18 Áreas médicas dedicadas</p>
+              </div>
+            </a>
+
+            <a href="#estrutura" class="card-clean flex items-start gap-4">
+              <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="flask-conical" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900">Laboratório</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Análises clínicas com rigor</p>
+              </div>
+            </a>
+
+            <a href="#estrutura" class="card-clean flex items-start gap-4">
+              <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="activity" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900">Cirurgia</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Minimamente invasiva</p>
+              </div>
+            </a>
+
+            <a href="#estrutura" class="card-clean flex items-start gap-4">
+              <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center flex-shrink-0">
+                <i data-lucide="bed-double" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900">Internamento VIP</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Privacidade e acolhimento</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           2. SECÇÃO APRESENTAÇÃO (Com a foto real do Consultório: consultorio.png)
+           =================================================================== -->
+      <section id="apresentacao" class="py-16 md:py-20 bg-white border-b border-slate-200">
+        <div class="container">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            
+            <!-- Imagem Institucional (Consultório: consultorio.png) -->
+            <div class="lg:col-span-5 order-2 lg:order-1">
+              <div class="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-100 aspect-[4/3]">
+                <img 
+                  src="consultorio.png" 
+                  alt="Apresentação do Centro Médico Gelvisol - Consulta Médica em Luanda" 
+                  class="w-full h-full object-cover object-center" 
+                  loading="lazy"
+                  onerror="this.onerror=null; this.src='public/consultorio.png';"
+                />
+              </div>
+            </div>
+
+            <!-- Texto Institucional -->
+            <div class="lg:col-span-7 order-1 lg:order-2 space-y-5 text-left">
+              <span class="badge-category">Sobre a Nossa Atuação</span>
+              <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+                Cuidado especializado. Tecnologia. Humanização.
+              </h2>
+
+              <div class="space-y-3.5 text-slate-600 text-base leading-relaxed">
+                <p>
+                  O <strong>Centro Médico Especializado Gelvisol</strong> é um centro médico polivalente localizado em Luanda, com instalações modernas e preparadas para responder aos desafios da medicina atual.
+                </p>
+                <p>
+                  Dispõe de consultórios médicos estruturados, laboratório próprio de análises clínicas, bloco operatório equipado e salas de internamento VIP privativas.
+                </p>
+                <p>
+                  Realizam-se consultas de diagnóstico e tratamento nas principais especialidades médicas, contando com um corpo clínico e de enfermagem de elevada competência técnica, científica e humana.
+                </p>
+                <p>
+                  Entre as suas valências destacam-se as <strong>cirurgias minimamente invasivas</strong> nas áreas geral, ortopédica e urológica, proporcionando recuperações mais rápidas e com máximo conforto.
+                </p>
+              </div>
+
+              <!-- Lista de Pontos Fortes -->
+              <div class="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                <div class="flex items-center gap-2 text-sm font-medium text-slate-800">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-sky-800 flex-shrink-0"></i>
+                  <span>Consultórios modernos e equipados</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm font-medium text-slate-800">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-sky-800 flex-shrink-0"></i>
+                  <span>Laboratório para análises clínicas</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm font-medium text-slate-800">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-sky-800 flex-shrink-0"></i>
+                  <span>Bloco operatório para cirurgias</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm font-medium text-slate-800">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-sky-800 flex-shrink-0"></i>
+                  <span>Salas de internamento VIP com privacidade</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Linha Divisória Sutil -->
+          <div class="my-12 border-t border-slate-200"></div>
+
+          <!-- Missão & Visão Cards -->
+          <div class="text-left max-w-3xl mb-8">
+            <span class="badge-category">Identidade e Rigor</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
+              Missão, Visão e Princípios
+            </h3>
+            <p class="mt-1 text-sm text-slate-600">
+              O compromisso ético e humanizado que orienta cada ato médico, diagnóstico e procedimento cirúrgico na nossa instituição.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            <div class="bg-slate-50 rounded-xl p-6 sm:p-8 border border-slate-200 shadow-sm text-left">
+              <div class="w-11 h-11 rounded-lg bg-sky-100 text-sky-800 flex items-center justify-center mb-4">
+                <i data-lucide="compass" class="w-5 h-5"></i>
+              </div>
+              <h4 class="text-lg font-bold text-slate-900 mb-2">Nossa Missão</h4>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Proporcionar serviços de saúde especializados e integrados com rigor técnico, ética profissional, inovação contínua e foco humanizado no bem-estar e dignidade de cada paciente e da sua família.
+              </p>
+            </div>
+
+            <div class="bg-slate-50 rounded-xl p-6 sm:p-8 border border-slate-200 shadow-sm text-left">
+              <div class="w-11 h-11 rounded-lg bg-sky-100 text-sky-800 flex items-center justify-center mb-4">
+                <i data-lucide="eye" class="w-5 h-5"></i>
+              </div>
+              <h4 class="text-lg font-bold text-slate-900 mb-2">Nossa Visão</h4>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Ser reconhecido como uma referência de excelência assistencial em Luanda e em Angola, destacando-se pela confiança clínica, tecnologia médica avançada e acolhimento humano exemplar.
+              </p>
+            </div>
+          </div>
+
+          <!-- Os 9 Valores da Clínica Gelvisol -->
+          <div class="bg-slate-50 rounded-xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+            <h4 class="text-base font-bold text-slate-900 mb-6 text-left">
+              Princípios e Valores do Centro Médico Gelvisol
+            </h4>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 text-left">
+              <div class="p-3.5 rounded-lg bg-white border border-slate-200/80 flex items-start gap-3">
+                <span class="w-5 h-5 rounded-full bg-sky-100 text-sky-800 text-xs font-bold flex items-center justify-center flex-shrink-0">1</span>
+                <span class="text-xs font-semibold text-slate-800">Elevado sentimento de humanismo</span>
+              </div>
+              <div class="p-3.5 rounded-lg bg-white border border-slate-200/80 flex items-start gap-3">
+                <span class="w-5 h-5 rounded-full bg-sky-100 text-sky-800 text-xs font-bold flex items-center justify-center flex-shrink-0">2</span>
+                <span class="text-xs font-semibold text-slate-800">Respeito rigoroso pela vida humana</span>
+              </div>
+              <div class="p-3.5 rounded-lg bg-white border border-slate-200/80 flex items-start gap-3">
+                <span class="w-5 h-5 rounded-full bg-sky-100 text-sky-800 text-xs font-bold flex items-center justify-center flex-shrink-0">3</span>
+                <span class="text-xs font-semibold text-slate-800">Integridade e observância estrita da ética profissional</span>
+              </div>
+              <div class="p-3.5 rounded-lg bg-white border border-slate-200/80 flex items-start gap-3">
+                <span class="w-5 h-5 rounded-full bg-sky-100 text-sky-800 text-xs font-bold flex items-center justify-center flex-shrink-0">4</span>
+                <span class="text-xs font-semibold text-slate-800">Inviolabilidade do sigilo da relação médico-paciente</span>
+              </div>
+              <div class="p-3.5 rounded-lg bg-white border border-slate-200/80 flex items-start gap-3">
+                <span class="w-5 h-5 rounded-full bg-sky-100 text-sky-800 text-xs font-bold flex items-center justify-center flex-shrink-0">5</span>
+                <span class="text-xs font-semibold text-slate-800">Capacitação constante dos recursos humanos</span>
+              </div>
+              <div class="p-3.5 rounded-lg bg-white border border-slate-200/80 flex items-start gap-3">
+                <span class="w-5 h-5 rounded-full bg-sky-100 text-sky-800 text-xs font-bold flex items-center justify-center flex-shrink-0">6</span>
+                <span class="text-xs font-semibold text-slate-800">Ambiente de trabalho harmonioso e cooperativo</span>
+              </div>
+              <div class="p-3.5 rounded-lg bg-white border border-slate-200/80 flex items-start gap-3">
+                <span class="w-5 h-5 rounded-full bg-sky-100 text-sky-800 text-xs font-bold flex items-center justify-center flex-shrink-0">7</span>
+                <span class="text-xs font-semibold text-slate-800">Sentimento de pertença e zelo institucional</span>
+              </div>
+              <div class="p-3.5 rounded-lg bg-white border border-slate-200/80 flex items-start gap-3">
+                <span class="w-5 h-5 rounded-full bg-sky-100 text-sky-800 text-xs font-bold flex items-center justify-center flex-shrink-0">8</span>
+                <span class="text-xs font-semibold text-slate-800">Incentivo a pesquisas e vias terapêuticas inovadoras</span>
+              </div>
+              <div class="p-3.5 rounded-lg bg-white border border-slate-200/80 flex items-start gap-3">
+                <span class="w-5 h-5 rounded-full bg-sky-100 text-sky-800 text-xs font-bold flex items-center justify-center flex-shrink-0">9</span>
+                <span class="text-xs font-semibold text-slate-800">Orgulho por integrar a equipa do Gelvisol</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           3. SECÇÃO ESPECIALIDADES (18 Especialidades com filtro e busca)
+           =================================================================== -->
+      <section id="especialidades" class="py-16 md:py-20 bg-slate-50 border-b border-slate-200">
+        <div class="container">
+          
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 text-left">
+            <div class="max-w-2xl">
+              <span class="badge-category">Corpo Clínico Multidisciplinar</span>
+              <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+                Nossas Especialidades Médicas
+              </h2>
+              <p class="mt-2 text-base text-slate-600">
+                18 Especialidades dedicadas à prevenção, diagnóstico precoce e tratamentos de excelência para todas as fases da vida.
+              </p>
+            </div>
+
+            <!-- Campo de Pesquisa em Tempo Real -->
+            <div class="w-full md:w-72">
+              <div class="relative">
+                <input 
+                  type="text" 
+                  id="specialty-search" 
+                  placeholder="Pesquisar especialidade..." 
+                  class="w-full pl-9 pr-4 py-2.5 bg-white border border-slate-300 rounded-lg text-sm text-slate-800 focus:outline-none focus:border-sky-800 shadow-sm"
+                />
+                <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3 top-3"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filtros de Categoria -->
+          <div class="filter-tabs">
+            <button type="button" class="filter-tab-btn active" data-filter="all">Todas as 18 Especialidades</button>
+            <button type="button" class="filter-tab-btn" data-filter="clinica">Clínica Geral & Adultos</button>
+            <button type="button" class="filter-tab-btn" data-filter="cirurgica">Valências Cirúrgicas</button>
+            <button type="button" class="filter-tab-btn" data-filter="diagnostico">Diagnóstico & Reabilitação</button>
+          </div>
+
+          <!-- Grid das 18 Especialidades -->
+          <div id="specialties-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            
+            <!-- 1. Clínica Geral -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="clinica" data-name="Clínica Geral" data-desc="Atendimento médico primário, avaliação clínica integral, diagnóstico precoce e orientação preventiva continuada.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <i data-lucide="stethoscope" class="w-5 h-5"></i>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Clínica</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Clínica Geral</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Atendimento médico primário, avaliação clínica integral, diagnóstico precoce e orientação preventiva continuada.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Clínica Geral" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- 2. Cirurgia Geral -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="cirurgica" data-name="Cirurgia Geral" data-desc="Diagnóstico e procedimentos cirúrgicos abdominais e tecidos moles, incluindo abordagens minimamente invasivas.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <i data-lucide="activity" class="w-5 h-5"></i>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Cirúrgica</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Cirurgia Geral</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Diagnóstico e procedimentos cirúrgicos abdominais e tecidos moles, incluindo abordagens minimamente invasivas.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Cirurgia Geral" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- 3. Medicina Interna -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="clinica" data-name="Medicina Interna" data-desc="Prevenção, diagnóstico minucioso e tratamento de patologias clínicas complexas e multissistémicas em pacientes adultos.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <i data-lucide="heart-pulse" class="w-5 h-5"></i>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Clínica</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Medicina Interna</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Prevenção, diagnóstico minucioso e tratamento de patologias clínicas complexas e multissistémicas em adultos.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Medicina Interna" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- 4. Ginecologia e Obstetrícia -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="clinica" data-name="Ginecologia e Obstetrícia" data-desc="Cuidados dedicados à saúde integral da mulher em todas as fases, rastreios e acompanhamento pré-natal.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <i data-lucide="baby" class="w-5 h-5"></i>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Mulher</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Ginecologia e Obstetrícia</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Cuidados dedicados à saúde integral da mulher em todas as fases, rastreios preventivos e acompanhamento pré-natal.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Ginecologia e Obstetrícia" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- 5. Pediatria -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="clinica" data-name="Pediatria" data-desc="Acompanhamento especializado do crescimento, desenvolvimento físico e psicomotor e vacinação infantil.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <i data-lucide="smile" class="w-5 h-5"></i>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Infantil</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Pediatria</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Acompanhamento especializado do crescimento, desenvolvimento físico e psicomotor e saúde infanto-juvenil.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Pediatria" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- 6. Urologia -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="cirurgica" data-name="Urologia" data-desc="Diagnóstico clínico e cirúrgico do aparelho urinário masculino e feminino, e aparelho reprodutor masculino.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <i data-lucide="shield-check" class="w-5 h-5"></i>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Cirúrgica</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Urologia</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Diagnóstico clínico e cirúrgico do aparelho urinário masculino e feminino, e aparelho reprodutor masculino.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Urologia" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- 7. Dermatologia -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="clinica" data-name="Dermatologia" data-desc="Diagnóstico, tratamento e prevenção de patologias da pele, cabelos e unhas com cuidados clínicos seguros.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <!-- SVG Especializado de Dermatologia e Saúde da Pele -->
+                    <svg class="w-5 h-5 text-sky-800" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M12 2.5a5.5 5.5 0 0 0-5.5 5.5c0 3.5 5.5 8.5 5.5 8.5s5.5-5 5.5-8.5A5.5 5.5 0 0 0 12 2.5z"/>
+                      <circle cx="12" cy="8" r="2.2"/>
+                      <path d="M4 18c3-1.2 5.5-1.2 8 0s5 1.2 8 0"/>
+                      <path d="M3 21.5c3.5-1 6-1 9 0s5.5 1 9 0"/>
+                    </svg>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Clínica</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Dermatologia</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Diagnóstico, tratamento e prevenção de patologias da pele, cabelos e unhas com cuidados clínicos seguros.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Dermatologia" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- 8. Oftalmologia -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="diagnostico" data-name="Oftalmologia" data-desc="Exames de acuidade visual, refração, rastreio de patologias oculares e cuidados com a saúde da visão.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <i data-lucide="eye" class="w-5 h-5"></i>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Visão</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Oftalmologia</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Exames de acuidade visual, refração, rastreio de patologias oculares e cuidados com a saúde da visão.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Oftalmologia" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- 9. Cardiologia -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="clinica" data-name="Cardiologia" data-desc="Avaliação cardiovascular completa, prevenção, rastreio e controlo de hipertensão arterial e cardiopatias.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <i data-lucide="heart" class="w-5 h-5"></i>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Cardiologia</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Cardiologia</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Avaliação cardiovascular completa, prevenção, rastreio e controlo de hipertensão arterial e cardiopatias.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Cardiologia" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- 10. Nutrição -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="clinica" data-name="Nutrição" data-desc="Avaliação do estado nutricional, planos alimentares personalizados e reeducação nutricional clínica.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <i data-lucide="apple" class="w-5 h-5"></i>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Clínica</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Nutrição</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Avaliação do estado nutricional, planos alimentares personalizados e reeducação nutricional clínica.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Nutrição" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- 11. Estomatologia (Medicina Dentária) -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="clinica" data-name="Estomatologia Medicina Dentária" data-desc="Cuidados de saúde oral, prevenção, tratamentos dentários, restaurações e profilaxia especializada.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <i data-lucide="smile" class="w-5 h-5"></i>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Dentária</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Estomatologia</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Cuidados de saúde oral, prevenção, tratamentos dentários restauradores e profilaxia odontológica.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Estomatologia" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- 12. Ortopedia e Traumatologia -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="cirurgica" data-name="Ortopedia e Traumatologia" data-desc="Tratamento clínico e cirúrgico de fraturas, lesões desportivas e patologias articulares e ósseas.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <i data-lucide="bone" class="w-5 h-5"></i>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Cirúrgica</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Ortopedia e Traumatologia</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Tratamento clínico e cirúrgico de fraturas, lesões osteomusculares e patologias articulares.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Ortopedia" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- 13. Otorrinolaringologia (ORL) -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="clinica" data-name="Otorrinolaringologia ORL" data-desc="Diagnóstico e tratamento de afeções do ouvido, nariz, garganta, equilíbrio e vias aéreas superiores.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <i data-lucide="ear" class="w-5 h-5"></i>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">ORL</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Otorrinolaringologia</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Diagnóstico e tratamento de afeções do ouvido, nariz, garganta, equilíbrio e vias aéreas superiores.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Otorrinolaringologia" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- 14. Neurologia -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="clinica" data-name="Neurologia" data-desc="Avaliação e acompanhamento de patologias do sistema nervoso central e periférico, cefaleias e epilepsia.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <i data-lucide="brain" class="w-5 h-5"></i>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Neurologia</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Neurologia</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Avaliação e acompanhamento de patologias do sistema nervoso central e periférico, cefaleias e tremores.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Neurologia" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- 15. Psiquiatria -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="clinica" data-name="Psiquiatria" data-desc="Cuidado e intervenção médica especializada em perturbações do humor, ansiedade, stress e saúde mental.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <i data-lucide="heart-handshake" class="w-5 h-5"></i>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Saúde Mental</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Psiquiatria</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Cuidado e intervenção médica especializada em perturbações do humor, ansiedade, stress e saúde mental.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Psiquiatria" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- 16. Psicologia Clínica -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="clinica" data-name="Psicologia Clínica" data-desc="Apoio psicológico, psicoterapia individual e familiar, gestão emocional e desenvolvimento pessoal.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <i data-lucide="user-check" class="w-5 h-5"></i>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Psicologia</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Psicologia Clínica</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Apoio psicológico, psicoterapia individual e familiar, gestão emocional e desenvolvimento do bem-estar.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Psicologia Clínica" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- 17. Fisioterapia e Reabilitação -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="diagnostico" data-name="Fisioterapia e Reabilitação" data-desc="Recuperação funcional motora, reabilitação pós-cirúrgica, alívio de dor e melhoria da mobilidade física.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <i data-lucide="activity" class="w-5 h-5"></i>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Reabilitação</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Fisioterapia</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Recuperação funcional motora, reabilitação pós-cirúrgica, alívio da dor e melhoria da mobilidade física.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Fisioterapia" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+            <!-- 18. Imagiologia & Diagnóstico -->
+            <div class="card-clean specialty-card flex flex-col justify-between" data-category="diagnostico" data-name="Imagiologia Meios de Diagnóstico" data-desc="Realização e interpretação de exames imagiológicos para suporte clínico minucioso e célere.">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                    <i data-lucide="scan-line" class="w-5 h-5"></i>
+                  </div>
+                  <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider bg-sky-50 px-2 py-0.5 rounded">Diagnóstico</span>
+                </div>
+                <h3 class="text-lg font-bold text-slate-900 mb-1.5">Imagiologia & Diagnóstico</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Realização e interpretação de exames imagiológicos para suporte clínico minucioso e seguro.</p>
+              </div>
+              <button type="button" data-open-appointment data-specialty="Imagiologia" class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-800 hover:text-sky-950">
+                <span>Agendar Consulta</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mensagem caso não encontre resultado na busca -->
+          <div id="no-specialties-found" class="hidden text-center py-12 bg-white rounded-lg border border-slate-200 mt-6">
+            <i data-lucide="search-x" class="w-10 h-10 text-slate-400 mx-auto mb-3"></i>
+            <p class="text-base font-semibold text-slate-700">Nenhuma especialidade encontrada com esse termo.</p>
+            <p class="text-xs text-slate-500 mt-1">Experimente pesquisar por outra palavra ou limpe o campo de busca.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           4. SECÇÃO CIRURGIA & ESTRUTURA VIP (Bloco Operatório e Internamento)
+           =================================================================== -->
+      <section id="estrutura" class="py-16 md:py-20 bg-white border-b border-slate-200">
+        <div class="container">
+          
+          <div class="text-left max-w-3xl mb-10">
+            <span class="badge-category">Cirurgia Avançada & Infraestrutura Clínica</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+              Bloco Operatório e Estrutura Hospitalar
+            </h2>
+            <p class="mt-2 text-base text-slate-600">
+              Instalações concebidas para proporcionar máxima segurança cirúrgica, técnicas minimamente invasivas e recuperação com elevado padrão de conforto e privacidade em Luanda.
+            </p>
+          </div>
+
+          <!-- Banner Destaque com Foto Real do Bloco Operatório (colsutorio.png) -->
+          <div class="mb-10 rounded-xl overflow-hidden border border-slate-200 bg-slate-50 shadow-sm">
+            <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+              
+              <!-- Foto Real do Bloco Operatório -->
+              <div class="lg:col-span-7 h-64 sm:h-80 lg:h-96 relative">
+                <img 
+                  src="colsutorio.png" 
+                  alt="Bloco Operatório Moderno do Centro Médico Gelvisol em Luanda" 
+                  class="w-full h-full object-cover object-center" 
+                  loading="lazy"
+                  onerror="this.onerror=null; this.src='public/colsutorio.png';"
+                />
+              </div>
+
+              <!-- Descrição Técnica da Cirurgia -->
+              <div class="lg:col-span-5 p-6 sm:p-8 space-y-4 text-left">
+                <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center">
+                  <i data-lucide="activity" class="w-5 h-5"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900">
+                  Cirurgias Minimamente Invasivas
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Os nossos blocos operatórios contam com torres de vídeo de alta definição, laparoscopia e monitorização contínua que minimizam o trauma tecidual e aceleram o retorno à vida ativa.
+                </p>
+                <div class="pt-2">
+                  <button type="button" data-open-appointment data-specialty="Cirurgia Geral" class="btn-primary text-xs py-2.5 px-4">
+                    <span>Marcar Avaliação Cirúrgica</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 Áreas Cirúrgicas Principais -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-14">
+            <div class="card-clean text-left">
+              <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center mb-3">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1.5">Cirurgia Geral</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">Procedimentos cirúrgicos abdominais, hérnias, tecidos moles e intervenções digestivas por via aberta e laparoscópica.</p>
+            </div>
+
+            <div class="card-clean text-left">
+              <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center mb-3">
+                <i data-lucide="bone" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1.5">Ortopedia e Traumatologia</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">Tratamento de fraturas agudas, artroscopias articulares, correções músculo-esqueléticas e cirurgia de tecidos moles.</p>
+            </div>
+
+            <div class="card-clean text-left">
+              <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center mb-3">
+                <i data-lucide="activity" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1.5">Urologia Cirúrgica</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">Endourologia, tratamento minimamente invasivo de cálculos renais, patologias prostáticas e urinárias.</p>
+            </div>
+          </div>
+
+          <!-- 4 Pilares da Infraestrutura Clínica -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+            <div class="card-clean text-left">
+              <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center mb-3">
+                <i data-lucide="stethoscope" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1">Consultórios</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">Espaços preparados para consultas especializadas e atendimento humanizado com total privacidade.</p>
+            </div>
+
+            <div class="card-clean text-left">
+              <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center mb-3">
+                <i data-lucide="flask-conical" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1">Laboratório</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">Estrutura própria para análises clínicas com rigor de controlo de qualidade e rapidez de resposta.</p>
+            </div>
+
+            <div class="card-clean text-left">
+              <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center mb-3">
+                <i data-lucide="activity" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1">Bloco Operatório</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">Salas cirúrgicas com filtragem de ar, equipamentos de vídeo e suporte avançado de anestesia.</p>
+            </div>
+
+            <div class="card-clean text-left">
+              <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center mb-3">
+                <i data-lucide="bed-double" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-1">Internamento VIP</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">Quartos privativos com apoio de enfermagem contínuo, climatização e conforto para acompanhante.</p>
+            </div>
+          </div>
+
+          <!-- Destaque: Internamento VIP com Foto Real (sala-vip.png) -->
+          <div class="rounded-xl overflow-hidden border border-slate-200 bg-slate-50 shadow-sm">
+            <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+              
+              <div class="lg:col-span-6 p-6 sm:p-10 space-y-4 text-left">
+                <span class="text-xs font-bold uppercase tracking-wider text-sky-800">Conforto e Recuperação Hospitalar</span>
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-900">
+                  Salas de Internamento VIP Privativas
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Quartos individuais concebidos para proporcionar tranquilidade aos pacientes em pós-operatório ou vigilância clínica e aos seus acompanhantes. Contam com cama hospitalar regulável, poltrona de acompanhante, suporte para infusões, televisão, ar condicionado split e frigobar privativo.
+                </p>
+                <div class="pt-2 flex flex-wrap gap-2 text-xs font-medium text-slate-700">
+                  <span class="bg-white px-3 py-1.5 rounded-md border border-slate-200">Privacidade Total</span>
+                  <span class="bg-white px-3 py-1.5 rounded-md border border-slate-200">Poltrona de Acompanhante</span>
+                  <span class="bg-white px-3 py-1.5 rounded-md border border-slate-200">Enfermagem Dedicada 24h</span>
+                </div>
+              </div>
+
+              <!-- Foto Real do Quarto VIP (sala-vip.png) -->
+              <div class="lg:col-span-6 h-64 sm:h-80 lg:h-96">
+                <img 
+                  src="sala-vip.png" 
+                  alt="Quarto de Internamento VIP do Centro Médico Gelvisol em Luanda" 
+                  class="w-full h-full object-cover object-center" 
+                  loading="lazy"
+                  onerror="this.onerror=null; this.src='public/sala-vip.png';"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           7. SECÇÃO CONTACTOS E AGENDAMENTO
+           =================================================================== -->
+      <section id="contactos" class="py-16 md:py-20 bg-slate-50">
+        <div class="container">
+          
+          <div class="text-left max-w-3xl mb-12">
+            <span class="badge-category">Canais de Atendimento</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+              Contacte o Centro Médico Gelvisol
+            </h2>
+            <p class="mt-2 text-base text-slate-600">
+              Estamos disponíveis para agendamentos de consultas, esclarecimento de dúvidas e apoio clínico permanente.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+            
+            <!-- Informações de Contacto Direto -->
+            <div class="lg:col-span-5 space-y-6 text-left">
+              <div class="card-clean flex items-start gap-4">
+                <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900">Localização em Luanda</h4>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                    Centro Médico Especializado Gelvisol<br>
+                    Luanda, Angola
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-clean flex items-start gap-4">
+                <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="phone" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900">Linhas Telefónicas</h4>
+                  <p class="text-xs text-slate-600 mt-1 space-y-1">
+                    <a href="tel:+244949934949" class="block hover:text-sky-800 font-semibold">+244 949 934 949</a>
+                    <a href="tel:+244949935935" class="block hover:text-sky-800 font-semibold">+244 949 935 935</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-clean flex items-start gap-4">
+                <div class="w-10 h-10 rounded-md bg-sky-50 text-sky-800 flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="clock" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900">Horário de Funcionamento</h4>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                    <strong>Consultas Externas:</strong> Segunda a Sábado: 08h00 - 20h00<br>
+                    <strong>Internamento e Apoio Clínico:</strong> 24 Horas / 7 Dias
+                  </p>
+                </div>
+              </div>
+
+              <div class="p-5 rounded-lg bg-emerald-50 border border-emerald-200">
+                <div class="flex items-center gap-3">
+                  <i data-lucide="message-circle" class="w-6 h-6 text-emerald-600"></i>
+                  <div>
+                    <h4 class="text-sm font-bold text-emerald-950">Atendimento Via WhatsApp</h4>
+                    <p class="text-xs text-emerald-800">Converse diretamente com a nossa receção.</p>
+                  </div>
+                </div>
+                <a href="https://wa.me/244949934949" target="_blank" rel="noopener noreferrer" class="mt-3 block text-center bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs py-2 px-4 rounded-md transition-colors">
+                  Iniciar Conversa WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <!-- Formulário Rápido de Mensagem -->
+            <div class="lg:col-span-7">
+              <div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm text-left">
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Envie uma Mensagem</h3>
+                <p class="text-xs text-slate-500 mb-6">Preencha os campos abaixo para solicitar informações ou agendamento.</p>
+
+                <form id="quick-contact-form" class="space-y-4">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label for="qc-name" class="block text-xs font-semibold text-slate-700 mb-1">Nome Completo *</label>
+                      <input type="text" id="qc-name" required class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-sm text-slate-800 focus:bg-white focus:outline-none focus:border-sky-800" placeholder="Seu nome" />
+                    </div>
+                    <div>
+                      <label for="qc-phone" class="block text-xs font-semibold text-slate-700 mb-1">Telefone / WhatsApp *</label>
+                      <input type="tel" id="qc-phone" required class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-sm text-slate-800 focus:bg-white focus:outline-none focus:border-sky-800" placeholder="+244 9xx xxx xxx" />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="qc-message" class="block text-xs font-semibold text-slate-700 mb-1">Mensagem ou Motivo de Contacto *</label>
+                    <textarea id="qc-message" rows="4" required class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-sm text-slate-800 focus:bg-white focus:outline-none focus:border-sky-800" placeholder="Como podemos ajudá-lo?"></textarea>
+                  </div>
+
+                  <div id="qc-feedback" class="hidden p-3 rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs flex items-center gap-2">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-700 flex-shrink-0"></i>
+                    <span>Mensagem preparada! A abrir WhatsApp para envio...</span>
+                  </div>
+
+                  <button type="submit" class="btn-primary w-full py-3">
+                    <i data-lucide="send" class="w-4 h-4"></i>
+                    <span>Enviar Mensagem via WhatsApp</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé Institucional -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-left">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+          
+          <div class="md:col-span-2 space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="p-1 rounded-lg bg-white shadow-sm flex items-center justify-center">
+                <img 
+                  src="logo.png" 
+                  alt="Logótipo Oficial Centro Médico Gelvisol" 
+                  class="h-10 w-auto object-contain" 
+                />
+              </div>
+              <div>
+                <span class="font-heading font-extrabold text-white text-lg tracking-tight block leading-tight">CENTRO MÉDICO GELVISOL</span>
+                <span class="text-[10px] text-sky-400 font-semibold tracking-wider uppercase block mt-0.5">Centro Especializado · Luanda</span>
+              </div>
+            </div>
+            <p class="text-xs text-slate-400 max-w-md leading-relaxed">
+              Centro Médico Especializado em Luanda, Angola. Cuidados de saúde multidisciplinares com rigor assistencial, cirurgias minimamente invasivas e atendimento humanizado.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-3">Links Rápidos</h4>
+            <ul class="space-y-2 text-xs">
+              <li><a href="#inicio" class="hover:text-white">Início</a></li>
+              <li><a href="#apresentacao" class="hover:text-white">Apresentação & Valores</a></li>
+              <li><a href="#especialidades" class="hover:text-white">18 Especialidades</a></li>
+              <li><a href="#estrutura" class="hover:text-white">Cirurgia & Internamento VIP</a></li>
+              <li><a href="#contactos" class="hover:text-white">Contactos & Marcações</a></li>
+              <li class="pt-2"><a href="centro-medico-gelvisol.zip" download="centro-medico-gelvisol.zip" class="text-sky-400 hover:text-sky-300 font-semibold inline-flex items-center gap-1.5"><i data-lucide="download" class="w-3.5 h-3.5"></i> Baixar Site (.ZIP)</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-3">Contactos Luanda</h4>
+            <p class="text-xs space-y-1.5 leading-relaxed">
+              <span class="block text-white font-medium">+244 949 934 949</span>
+              <span class="block text-white font-medium">+244 949 935 935</span>
+              <span class="block text-slate-400">Luanda - Angola</span>
+              <span class="block text-slate-400">Seg - Sáb: 08h00 às 20h00</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="pt-8 border-t border-slate-800 text-xs flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p>© <span id="current-year">2026</span> Centro Médico Especializado Gelvisol. Todos os direitos reservados.</p>
+          <p class="text-slate-500">Desenvolvido em HTML5, CSS3 e JavaScript Puro.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===================================================================
+         MODAL DE MARCAÇÃO DE CONSULTA
+         =================================================================== -->
+    <div id="appointment-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-content p-6 sm:p-8 text-left relative">
+        
+        <!-- Botão Fechar -->
+        <button type="button" data-close-appointment class="absolute top-4 right-4 p-2 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors" aria-label="Fechar formulário">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+
+        <div id="appointment-form-container">
+          <div class="flex items-center gap-2 mb-2 text-sky-800">
+            <i data-lucide="calendar" class="w-5 h-5"></i>
+            <span class="text-xs font-bold uppercase tracking-wider">Agendamento Online</span>
+          </div>
+
+          <h3 id="modal-title" class="text-xl sm:text-2xl font-bold text-slate-900 mb-1">
+            Marcar Consulta Médica
+          </h3>
+          <p class="text-xs text-slate-600 mb-6">
+            Preencha os dados do paciente. A nossa receção entrará em contacto para confirmar o seu agendamento.
+          </p>
+
+          <form id="appointment-form" class="space-y-4">
+            <div>
+              <label for="modal-field-name" class="block text-xs font-semibold text-slate-700 mb-1">Nome do Paciente *</label>
+              <input type="text" id="modal-field-name" required class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-sm text-slate-800 focus:bg-white focus:outline-none focus:border-sky-800" placeholder="Nome completo" />
+            </div>
+
+            <div>
+              <label for="modal-field-phone" class="block text-xs font-semibold text-slate-700 mb-1">Contacto Telefónico / WhatsApp *</label>
+              <input type="tel" id="modal-field-phone" required class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-sm text-slate-800 focus:bg-white focus:outline-none focus:border-sky-800" placeholder="+244 9xx xxx xxx" />
+            </div>
+
+            <div>
+              <label for="modal-field-specialty" class="block text-xs font-semibold text-slate-700 mb-1">Especialidade Pretendida *</label>
+              <select id="modal-field-specialty" required class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-sm text-slate-800 focus:bg-white focus:outline-none focus:border-sky-800">
+                <option value="">Selecione uma especialidade...</option>
+                <option value="Clínica Geral">Clínica Geral</option>
+                <option value="Cirurgia Geral">Cirurgia Geral</option>
+                <option value="Medicina Interna">Medicina Interna</option>
+                <option value="Ginecologia e Obstetrícia">Ginecologia e Obstetrícia</option>
+                <option value="Pediatria">Pediatria</option>
+                <option value="Urologia">Urologia</option>
+                <option value="Dermatologia">Dermatologia</option>
+                <option value="Oftalmologia">Oftalmologia</option>
+                <option value="Cardiologia">Cardiologia</option>
+                <option value="Nutrição">Nutrição</option>
+                <option value="Estomatologia">Estomatologia (Dentária)</option>
+                <option value="Ortopedia e Traumatologia">Ortopedia e Traumatologia</option>
+                <option value="Otorrinolaringologia">Otorrinolaringologia (ORL)</option>
+                <option value="Neurologia">Neurologia</option>
+                <option value="Psiquiatria">Psiquiatria</option>
+                <option value="Psicologia Clínica">Psicologia Clínica</option>
+                <option value="Fisioterapia">Fisioterapia e Reabilitação</option>
+                <option value="Imagiologia">Imagiologia & Diagnóstico</option>
+              </select>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="modal-field-date" class="block text-xs font-semibold text-slate-700 mb-1">Data Preferencial</label>
+                <input type="date" id="modal-field-date" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-sm text-slate-800 focus:bg-white focus:outline-none focus:border-sky-800" />
+              </div>
+              <div>
+                <label for="modal-field-shift" class="block text-xs font-semibold text-slate-700 mb-1">Período Preferencial</label>
+                <select id="modal-field-shift" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-sm text-slate-800 focus:bg-white focus:outline-none focus:border-sky-800">
+                  <option value="Manhã (08h00 - 13h00)">Manhã (08h00 - 13h00)</option>
+                  <option value="Tarde (13h00 - 18h00)">Tarde (13h00 - 18h00)</option>
+                  <option value="Final de Tarde (18h00 - 20h00)">Final de Tarde (18h00 - 20h00)</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="modal-field-notes" class="block text-xs font-semibold text-slate-700 mb-1">Observações ou Sintomas (Opcional)</label>
+              <textarea id="modal-field-notes" rows="2" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-sm text-slate-800 focus:bg-white focus:outline-none focus:border-sky-800" placeholder="Ex: primeira consulta, dores, etc."></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary w-full py-3">
+              <i data-lucide="check" class="w-4 h-4"></i>
+              <span>Confirmar Agendamento via WhatsApp</span>
+            </button>
+          </form>
+
+          <!-- Confirmação de Sucesso -->
+          <div id="appointment-success" class="hidden text-center py-6 space-y-4">
+            <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto">
+              <i data-lucide="check-circle" class="w-8 h-8"></i>
+            </div>
+            <h4 class="text-xl font-bold text-slate-900">Pedido de Agendamento Enviado!</h4>
+            <p class="text-sm text-slate-600 max-w-sm mx-auto leading-relaxed">
+              Os dados foram encaminhados com sucesso para a receção do Centro Médico Gelvisol via WhatsApp. Entraremos em contacto brevemente.
+            </p>
+            <button type="button" data-close-appointment class="btn-outline text-xs px-6 py-2.5 mx-auto">
+              <span>Fechar</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a 
+      href="https://wa.me/244949934949?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20uma%20consulta%20no%20Centro%20M%C3%A9dico%20Gelvisol." 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="floating-whatsapp" 
+      aria-label="Contactar via WhatsApp"
+      title="Contactar via WhatsApp (+244 949 934 949)"
+    >
+      <i data-lucide="message-circle" class="w-7 h-7"></i>
+    </a>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="btn-back-to-top" class="back-to-top" aria-label="Voltar ao início">
+      <i data-lucide="chevron-up" class="w-5 h-5"></i>
+    </button>
+
+    <!-- Script Principal em JavaScript Puro -->
+    <script src="script.js"></script>
+    <script>
+      // Atualiza ano no rodapé
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" fill="none">
+  <defs>
+    <!-- Snake Gradient -->
+    <linearGradient id="snakeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#007FFF" />
+      <stop offset="30%" stop-color="#0055FF" />
+      <stop offset="70%" stop-color="#003ECC" />
+      <stop offset="100%" stop-color="#0066FF" />
+    </linearGradient>
+    <linearGradient id="snakeHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Central Red/Orange Sphere -->
+  <circle cx="500" cy="80" r="45" fill="#FF3600" />
+
+  <!-- Central Tapered Needle Staff -->
+  <polygon points="475,130 525,130 502,920 498,920" fill="#FF3600" />
+
+  <!-- Top-Left Motif -->
+  <!-- Outer arc -->
+  <path d="M125,415 C175,435 250,435 320,380 C365,345 385,270 360,150" 
+        stroke="#FF3600" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Inner teardrop with eye -->
+  <path d="M360,150 C310,210 240,250 220,305 C200,355 240,380 275,360 C315,335 320,270 270,270 C240,270 240,310 270,310" 
+        stroke="#FF3600" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <circle cx="270" cy="290" r="20" fill="#FF3600" />
+
+  <!-- Top-Right Motif (Mirror of Top-Left) -->
+  <path d="M875,415 C825,435 750,435 680,380 C635,345 615,270 640,150" 
+        stroke="#FF3600" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M640,150 C690,210 760,250 780,305 C800,355 760,380 725,360 C685,335 680,270 730,270 C760,270 760,310 730,310" 
+        stroke="#FF3600" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <circle cx="730" cy="290" r="20" fill="#FF3600" />
+
+  <!-- Bottom-Left Motif -->
+  <!-- Outer arc -->
+  <path d="M150,635 C205,595 285,595 360,635" 
+        stroke="#FF3600" stroke-width="32" stroke-linecap="round" />
+  <!-- Inner teardrop pointing down -->
+  <path d="M360,645 C380,720 340,845 270,880 C235,845 220,770 235,705 C250,650 315,670 315,720 C315,750 285,765 260,745" 
+        stroke="#FF3600" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <circle cx="275" cy="725" r="20" fill="#FF3600" />
+
+  <!-- Bottom-Right Motif (Mirror of Bottom-Left) -->
+  <path d="M850,635 C795,595 715,595 640,635" 
+        stroke="#FF3600" stroke-width="32" stroke-linecap="round" />
+  <path d="M640,645 C620,720 660,845 730,880 C765,845 780,770 765,705 C750,650 685,670 685,720 C685,750 715,765 740,745" 
+        stroke="#FF3600" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <circle cx="725" cy="725" r="20" fill="#FF3600" />
+
+  <!-- Snake Head -->
+  <path d="M480,265 C520,240 595,230 600,250 C605,270 540,285 490,290 Z" fill="url(#snakeGrad)" />
+  <circle cx="555" cy="248" r="7" fill="#FFFFFF" />
+
+  <!-- Snake Coils -->
+  <path d="M590,255 
+           C510,270 410,290 405,345 
+           C400,410 500,430 565,450 
+           C610,465 595,525 540,550 
+           C470,580 410,600 415,660 
+           C420,720 510,735 550,755 
+           C575,770 550,810 505,825 
+           C460,840 460,865 465,865" 
+        stroke="url(#snakeGrad)" stroke-width="60" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Snake 3D Highlight Rib -->
+  <path d="M580,255 
+           C505,270 415,290 410,345 
+           C405,405 500,425 560,445 
+           C600,460 585,520 535,545 
+           C470,575 415,595 420,655 
+           C425,715 505,730 545,750" 
+        stroke="#60A5FA" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" />
+</svg>

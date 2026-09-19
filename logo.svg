@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <!-- 3D Ribbon Gradients for the Snake -->
+    <linearGradient id="snakeBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#007BFF" />
+      <stop offset="25%" stop-color="#0052E0" />
+      <stop offset="50%" stop-color="#0066FF" />
+      <stop offset="80%" stop-color="#0044CC" />
+      <stop offset="100%" stop-color="#0080FF" />
+    </linearGradient>
+
+    <linearGradient id="snakeSheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#60C5FF" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#0066FF" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#003399" stop-opacity="0.7" />
+    </linearGradient>
+
+    <radialGradient id="sphereGlow" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FF6B3D" />
+      <stop offset="60%" stop-color="#FF3300" />
+      <stop offset="100%" stop-color="#D62800" />
+    </radialGradient>
+  </defs>
+
+  <!-- Central Vermilion Sphere at Top -->
+  <circle cx="500" cy="82" r="44" fill="url(#sphereGlow)" />
+
+  <!-- Central Tapered Needle Staff -->
+  <path d="M473 126 H527 L502 925 C501 928 499 928 498 925 Z" fill="#FF3300" />
+
+  <!-- ==================== TOP-LEFT MOTIF ==================== -->
+  <g id="motif-top-left">
+    <!-- Outer sweeping curved arc bracket -->
+    <path d="M124 415 C160 435 240 435 315 385 C355 355 380 290 360 152"
+          stroke="#FF3300" stroke-width="32" stroke-linecap="round" fill="none" />
+    <!-- Inner teardrop with eye -->
+    <path d="M360 152 C315 210 242 250 220 305 C202 350 238 380 275 362 C318 340 324 274 274 270 C242 268 238 308 270 312"
+          stroke="#FF3300" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <circle cx="270" cy="290" r="20" fill="#FF3300" />
+  </g>
+
+  <!-- ==================== TOP-RIGHT MOTIF (Mirror) ==================== -->
+  <use href="#motif-top-left" transform="translate(1000, 0) scale(-1, 1)" />
+
+  <!-- ==================== BOTTOM-LEFT MOTIF ==================== -->
+  <g id="motif-bottom-left">
+    <!-- Outer sweeping curved arc bracket at the top -->
+    <path d="M144 635 C190 595 285 595 358 635"
+          stroke="#FF3300" stroke-width="32" stroke-linecap="round" fill="none" />
+    <!-- Inner teardrop pointing downwards with circular loop -->
+    <path d="M358 642 C380 720 342 840 272 880 C234 845 220 770 236 706 C250 652 316 670 316 720 C316 752 284 766 260 746"
+          stroke="#FF3300" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <circle cx="276" cy="726" r="20" fill="#FF3300" />
+  </g>
+
+  <!-- ==================== BOTTOM-RIGHT MOTIF (Mirror) ==================== -->
+  <use href="#motif-bottom-left" transform="translate(1000, 0) scale(-1, 1)" />
+
+  <!-- ==================== THE BLUE SERPENT ==================== -->
+  <!-- Snake Head (top right facing right with sleek angle) -->
+  <path d="M475 272 C515 242 590 230 600 248 C606 268 546 288 485 295 Z" fill="url(#snakeBody)" />
+  <!-- Snake Eye -->
+  <circle cx="556" cy="248" r="7.5" fill="#FFFFFF" />
+
+  <!-- Snake Main 3D Coil Body -->
+  <path d="M592 254
+           C520 268 408 288 404 346
+           C398 412 495 432 566 452
+           C616 468 596 528 540 552
+           C468 582 408 604 414 662
+           C420 722 510 736 550 756
+           C578 772 550 812 505 828
+           C458 844 460 864 464 864"
+        stroke="url(#snakeBody)" stroke-width="62" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+  <!-- Snake 3D Highlights for Gloss and Depth -->
+  <path d="M584 254
+           C516 268 414 288 410 344
+           C405 406 496 426 560 446
+           C604 462 588 522 534 546
+           C468 576 414 598 418 656
+           C424 716 505 730 544 750"
+        stroke="url(#snakeSheen)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+  <!-- Subtle Snake Scale Ridge Lines -->
+  <path d="M588 252
+           C518 266 412 286 407 342
+           C402 404 496 424 562 444
+           C608 460 590 520 536 544
+           C468 574 412 596 416 654
+           C422 714 506 728 546 748"
+        stroke="#93C5FD" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.8" />
+</svg>
